@@ -1,2 +1,2 @@
 # Ty-s-Web-
-Ty's personal web page.
+Ty's personal portfolio web page.
