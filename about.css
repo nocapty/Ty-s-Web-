@@ -1,0 +1,146 @@
+body {
+    background-color: rgb(223, 87, 87);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.navbar a {
+    font-size: 18px;
+    text-decoration: none;
+    color: bisque;
+    font-weight: 500;
+    margin-left: 35px;
+    font-size: 20px;
+    
+
+}
+
+.navbar a:hover, .navbar a.active {
+    color: rgb(9, 244, 115);
+    
+    
+}
+
+.logo {
+    font-size: 25px;
+    color: rgb(209, 211, 72);
+    text-shadow: 2px 0 15px;
+    font-weight: 1000;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+h1{
+    color: rgb(81, 44, 15);
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about-me {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.about-content {
+    
+    text-align: center; 
+    margin-bottom: 100px;
+    
+    
+}
+
+.about-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(235, 138, 205);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(98, 234, 93);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(128, 68, 218);
+    z-index: -1;
+    transition: .5s;
+
+
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(237, 143, 19);
+    font-family: monospace;
+    color: rgb(82, 51, 108);
+    text-align: center;
+    padding: 10px 10%;
+}
